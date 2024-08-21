@@ -84,8 +84,10 @@ nav > picture {
   justify-content: center;
   gap: 1rem;
 
+  font-weight: 800;
+
   transition: color 1000ms linear;
-  transition: background 1000ms linear;
+  transition: background 100ms linear;
 
   z-index: 5;
 }
@@ -96,7 +98,11 @@ nav > picture {
 }
 
 .picture-icon {
-  background-color: #7120b8;
+  background: linear-gradient(
+    180deg,
+    rgba(116, 32, 187, 1) 0%,
+    rgba(227, 97, 36, 1) 100%
+  );
   width: 40px;
   height: 40px;
 
@@ -142,14 +148,14 @@ nav > picture {
 
 @keyframes float1 {
   0% {
-    transform:rotate(45deg) translatey(0px) scale(1.5);
+    transform: rotate(45deg) translatey(0px) scale(1.5);
   }
   60% {
     filter: blur(1px);
-    transform:rotate(45deg) translatey(-40px) scale(1);
+    transform: rotate(45deg) translatey(-40px) scale(1);
   }
   100% {
-    transform:rotate(45deg) translatey(-0px) scale(1.5);
+    transform: rotate(45deg) translatey(-0px) scale(1.5);
   }
 }
 
@@ -164,13 +170,13 @@ nav > picture {
 
 @keyframes float2 {
   0% {
-    transform:rotate(15deg) scale(.5) translatey(0px);
+    transform: rotate(15deg) scale(0.5) translatey(0px);
   }
   60% {
-    transform:rotate(15deg) scale(.5) translatex(40px);
+    transform: rotate(15deg) scale(0.5) translatex(40px);
   }
   100% {
-    transform:rotate(15deg) scale(.5) translatey(-0px);
+    transform: rotate(15deg) scale(0.5) translatey(-0px);
   }
 }
 
@@ -180,18 +186,18 @@ nav > picture {
   z-index: 1;
 
   animation: float2 5s ease-in-out infinite;
-  transform: rotate(15deg) scale(.5);
+  transform: rotate(15deg) scale(0.5);
 }
 
 @keyframes float3 {
   0% {
-    transform:rotate(15deg) scale(1.15);
+    transform: rotate(15deg) scale(1.15);
   }
   60% {
-    transform:rotate(-20deg) scale(1.15);
+    transform: rotate(-20deg) scale(1.15);
   }
   100% {
-    transform:rotate(15deg) scale(1.15);
+    transform: rotate(15deg) scale(1.15);
   }
 }
 
@@ -205,13 +211,13 @@ nav > picture {
 
 @keyframes float4 {
   0% {
-    transform: rotate(-15deg) scale(.8);
+    transform: rotate(-15deg) scale(0.8);
   }
   60% {
-    transform: rotate(15deg) scale(.8);
+    transform: rotate(15deg) scale(0.8);
   }
   100% {
-    transform: rotate(-15deg) scale(.8);
+    transform: rotate(-15deg) scale(0.8);
   }
 }
 
@@ -222,7 +228,7 @@ nav > picture {
 
   filter: blur(1px);
   animation: float4 18s ease-in-out infinite;
-  transform: rotate(-15deg) scale(.8);
+  transform: rotate(-15deg) scale(0.8);
 }
 
 #icon5 {
@@ -230,8 +236,8 @@ nav > picture {
   right: -1rem;
   z-index: 0;
 
-  filter: blur(.5px);
-  transform: rotate(-8deg) scale(.8);
+  filter: blur(0.5px);
+  transform: rotate(-8deg) scale(0.8);
 }
 
 #icon6 {
@@ -239,6 +245,5 @@ nav > picture {
   right: -3.5rem;
   z-index: 0;
 
-  transform: rotate(-4deg) scale(.65);
+  transform: rotate(-4deg) scale(0.65);
 }
-
